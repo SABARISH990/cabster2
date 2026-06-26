@@ -17,7 +17,7 @@ export default function Features() {
         viewport={{ once: false }}
         transition={{ duration: 0.8 }}
       >
-        Why Choose CADSTER?
+        Why Choose CABSTER?
       </motion.h2>
 
       <div className="cards">

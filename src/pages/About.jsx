@@ -23,7 +23,7 @@ export default function About() {
           viewport={{ once: false }}
           transition={{ duration: 0.8 }}
         >
-          ABOUT CADSTER
+          ABOUT CABSTER
         </motion.h1>
 
         <p className="animated-paragraph">
