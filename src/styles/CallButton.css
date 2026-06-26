@@ -24,3 +24,13 @@
 
   animation:pulse 2s infinite;
 }
+@media (max-width: 768px) {
+  .call-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+
+    right: 15px;
+    bottom: 80px; /* keeps spacing above WhatsApp */
+  }
+}
