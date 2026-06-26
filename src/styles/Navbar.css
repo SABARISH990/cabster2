@@ -99,9 +99,10 @@
   }
 }
 
-/* 📱 RESPONSIVE */
+
 @media (max-width: 768px) {
   .navbar {
+
     flex-direction: row;
     align-items: flex-start;
   }
@@ -111,5 +112,6 @@
     gap: 15px;
     width: 100%;
     margin-top: 10px;
+    margin-left: -10px;
   }
 }
