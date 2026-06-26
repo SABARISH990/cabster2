@@ -1,0 +1,26 @@
+.call-btn{
+  position:fixed;
+
+  right:20px;
+  bottom:95px;
+
+  width:60px;
+  height:60px;
+
+  border-radius:50%;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:#ff2d2d;
+  color:white;
+
+  font-size:22px;
+
+  z-index:999;
+
+  box-shadow:0 0 20px rgba(255,45,45,.5);
+
+  animation:pulse 2s infinite;
+}

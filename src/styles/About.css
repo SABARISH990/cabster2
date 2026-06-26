@@ -1,0 +1,166 @@
+.about-page{
+  min-height:100vh;
+  padding:120px 6%;
+  background:transparent;
+  color:#fff;
+  overflow:hidden;
+}
+
+.about-container{
+  max-width:1200px;
+  margin:auto;
+}
+
+/* Heading */
+.drop-title{
+  text-align:center;
+  font-size:52px;
+  font-weight:800;
+  color:#ff2d2d;
+  margin-bottom:60px;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  position:relative;
+}
+
+.drop-title::after{
+  content:"";
+  display:block;
+  width:100px;
+  height:4px;
+  background:#ff2d2d;
+  margin:15px auto 0;
+  border-radius:20px;
+}
+
+/* Paragraph */
+.animated-paragraph{
+  font-size:20px;
+  line-height:2;
+  color:#d5d5d5;
+  margin-bottom:30px;
+  text-align:center;
+}
+
+.animated-paragraph span{
+  display:inline-block;
+}
+
+/* Moving Images */
+.image-wrapper{
+  width:100%;
+  overflow:hidden;
+  margin-top:60px;
+}
+
+.moving-images{
+  display:flex;
+  gap:30px;
+  width:max-content;
+
+  animation:moveCars 15s linear infinite;
+}
+
+.moving-images img{
+  width:500px;
+  height:320px;
+  object-fit:cover;
+
+  border-radius:20px;
+
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+
+  transition:.3s;
+}
+
+.moving-images img:hover{
+  transform:scale(1.05);
+}
+
+@keyframes moveCars{
+  from{
+    transform:translateX(100vw);
+  }
+
+  to{
+    transform:translateX(-1600px);
+  }
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+  .drop-title{
+    font-size:36px;
+  }
+
+  .animated-paragraph{
+    font-size:16px;
+  }
+
+  .moving-images img{
+    width:320px;
+    height:220px;
+  }
+
+}
+.banner{
+  width:100%;
+  overflow:hidden;
+  padding:25px 0;
+
+  background:rgba(255,255,255,0.04);
+  backdrop-filter:blur(10px);
+
+  
+}
+
+.banner-text{
+  display:inline-block;
+  white-space:nowrap;
+
+  font-size:30px;
+  font-weight:800;
+  letter-spacing:2px;
+  text-transform:uppercase;
+
+  background:linear-gradient(
+    90deg,
+    rgba(255,255,255,0.15),
+    rgba(255,45,45,0.9),
+    rgba(255,255,255,0.15)
+  );
+
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+
+  text-shadow:
+    0 0 10px rgba(255,45,45,.4),
+    0 0 20px rgba(255,45,45,.2);
+
+  animation:
+    scrollBanner 15s linear infinite,
+    glowText 2s ease-in-out infinite alternate;
+}
+
+/* RIGHT → LEFT MOVEMENT */
+@keyframes scrollBanner{
+  0%{
+    transform:translateX(100vw);
+  }
+
+  100%{
+    transform:translateX(-100%);
+  }
+}
+
+@keyframes glowText{
+  from{
+    filter:brightness(1);
+  }
+
+  to{
+    filter:brightness(1.4);
+  }
+}

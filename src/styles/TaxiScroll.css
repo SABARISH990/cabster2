@@ -1,0 +1,26 @@
+.road-section{
+  height:150vh;
+  background:transparent;
+  padding:100px 5%;
+  overflow:hidden;
+}
+
+.road-section h2{
+  text-align:center;
+  color:white;
+  margin-bottom:80px;
+}
+
+.road{
+  position:relative;
+  height:200px;
+  border-bottom:8px dashed #fff;
+}
+
+.taxi{
+  position:absolute;
+  left:0;
+  bottom:20px;
+
+  width:180px;
+}

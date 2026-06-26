@@ -1,0 +1,62 @@
+.taxi-section{
+  height:100vh;
+  padding:120px 5%;
+  background:linear-gradient(#050505,#0a0a0a);
+  color:white;
+  position:relative;
+  overflow:hidden;
+}
+
+.taxi-section h2{
+  text-align:center;
+  font-size:40px;
+  margin-bottom:80px;
+}
+.road{
+  position:absolute;
+  bottom:80px;
+  left:0;
+  width:200%;
+  height:6px;
+  display:flex;
+  gap:60px;
+
+  animation: roadMove 2s linear infinite;
+}
+
+@keyframes roadMove {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.road-line{
+  width:120px;
+  height:6px;
+  background:rgba(255,255,255,0.3);
+  border-radius:4px;
+}
+
+.road-line{
+  width:120px;
+  height:6px;
+  background:#444;
+  border-radius:4px;
+}
+
+/* TAXI */
+.taxi{
+  position:absolute;
+  bottom:100px;
+  left:0;
+  transform:translateX(-150px);
+}
+
+.taxi img {
+  width: 150px;
+  filter: drop-shadow(0 0 25px rgba(255, 230, 120, 0.7));
+}
+
+/* SPEED EFFECT */
+.taxi img:hover{
+  filter:drop-shadow(0 30px 40px rgba(255,200,0,0.5));
+}

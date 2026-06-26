@@ -1,0 +1,150 @@
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:60px 5%;
+  position:relative;
+  overflow:hidden;
+  background:transparent;
+  color:#fff;
+  z-index:2;
+}
+
+.hero-left{
+  flex:1;
+}
+
+.tagline{
+  color:#ff2d2d;
+  margin-bottom:20px;
+  font-size:18px;
+  font-weight:600;
+  letter-spacing:2px;
+}
+
+.hero-left h1{
+  font-size:70px;
+  line-height:1.1;
+  margin-bottom:20px;
+}
+
+.hero-left span{
+  color:#ff2d2d;
+}
+
+.desc{
+  margin-top:20px;
+  color:#ddd;
+  max-width:500px;
+  font-size:20px;
+  line-height:1.8;
+}
+
+.hero-btn{
+  margin-top:30px;
+  border:none;
+  background:#ff2d2d;
+  color:#fff;
+  padding:16px 35px;
+  border-radius:10px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:18px;
+  transition:.3s;
+}
+
+.hero-btn:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 25px rgba(255,45,45,.4);
+}
+
+.hero-right{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.hero-right h1{
+  font-size:60px;
+  color:#fff;
+  text-align:center;
+}
+
+.hero-car{
+  width:100%;
+  max-width:650px;
+  animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%{
+    transform:translateY(0);
+  }
+  50%{
+    transform:translateY(-15px);
+  }
+  100%{
+    transform:translateY(0);
+  }
+}
+
+.hero-left,
+.hero-right{
+  position:relative;
+  z-index:2;
+}
+
+@media (max-width:768px){
+
+  .hero{
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    gap:50px;
+  }
+
+  .hero-left h1{
+    font-size:45px;
+  }
+
+  .hero-right h1{
+    font-size:35px;
+  }
+
+  .desc{
+    margin:auto;
+  }
+
+}
+.about-buttons{
+  display:flex;
+  justify-content:flex-start;
+  margin:10px 0;
+}
+
+.about-book-btn{
+  display:flex;
+  align-items:normal;
+  gap:10px;
+
+  background:#25D366;
+  color:#fff;
+  text-decoration:none;
+
+  padding:15px 15px;
+  border-radius:50px;
+
+  font-size:18px;
+  font-weight:600;
+
+  transition:0.3s;
+}
+
+.about-book-btn:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 25px rgba(37,211,102,.4);
+}
