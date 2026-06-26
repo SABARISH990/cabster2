@@ -24,3 +24,26 @@
 
   width:180px;
 }
+@media (max-width: 768px) {
+
+  .road-section {
+    height: auto;
+    min-height: 100vh;
+    padding: 70px 4%;
+  }
+
+  .road-section h2 {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+
+  .road {
+    height: 120px;
+    border-bottom: 6px dashed #fff;
+  }
+
+  .taxi {
+    width: 110px;
+    bottom: 10px;
+  }
+}

@@ -11,12 +11,7 @@
   color:#ff2d2d;
   margin-bottom:10px;
 }
-.footer{
-  background:transparent;
-  color:white;
-  text-align:center;
-  padding:60px 20px;
-}
+
 
 .footer h3{
   color:#ff2d2d;
@@ -53,4 +48,28 @@
 .copyright{
   margin-top:20px;
   color:#999;
+}
+@media (max-width: 768px) {
+
+  .footer {
+    padding: 40px 15px;
+  }
+
+  .footer h3 {
+    font-size: 26px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0;
+  }
+
+  .footer-contact p {
+    font-size: 14px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
 }

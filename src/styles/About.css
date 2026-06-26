@@ -164,3 +164,49 @@
     filter:brightness(1.4);
   }
 }
+@media (max-width: 768px) {
+
+  .about-page {
+    padding: 80px 4%;
+    overflow-x: hidden;
+  }
+
+  .drop-title {
+    font-size: 32px;
+  }
+
+  .animated-paragraph {
+    font-size: 15px;
+    line-height: 1.8;
+    padding: 0 10px;
+  }
+
+  .moving-images img {
+    width: 260px;
+    height: 180px;
+  }
+
+  /* FIX ANIMATION FOR MOBILE */
+  @keyframes moveCars {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .banner-text {
+    font-size: 20px;
+  }
+
+  /* FIX BANNER ANIMATION */
+  @keyframes scrollBanner {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}

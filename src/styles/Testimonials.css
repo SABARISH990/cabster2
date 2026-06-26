@@ -31,3 +31,32 @@
   color:#ff2d2d;
   margin-top:15px;
 }
+@media (max-width: 768px) {
+
+  .testimonials {
+    padding: 70px 4%;
+  }
+
+  .testimonials h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+  }
+
+  .testimonial-card p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .testimonial-card h4 {
+    font-size: 16px;
+  }
+}

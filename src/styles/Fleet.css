@@ -100,3 +100,40 @@
   padding:12px 20px;
   border-radius:10px;
 }
+@media (max-width: 768px) {
+
+  .fleet {
+    padding: 70px 4%;
+  }
+
+  .fleet h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .fleet-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .fleet-card img {
+    height: 200px;
+  }
+
+  .fleet-content {
+    padding: 18px;
+  }
+
+  .fleet-content h3 {
+    font-size: 18px;
+  }
+
+  .fleet-content p {
+    font-size: 14px;
+  }
+
+  .fleet-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}
